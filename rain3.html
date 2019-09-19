@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppTastic</title>
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="stylesheet" type="text/css" href="styles/framework.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+</head>
+<body>
+    
+<div id="page-transitions" class="page-build light-skin highlight-blue">    
+    <div id="menu-hider"></div>
+    
+    <div id="menu-list" data-selected="menu-pages" data-load="menu-list.html" data-height="415" class="menu-box menu-load menu-bottom"></div>    
+    <div id="menu-demo" data-load="menu-demo.html" data-height="210" class="menu-box menu-load menu-bottom"></div>
+    <div id="menu-find" data-load="menu-find.html" data-height="420" class="menu-box menu-load menu-bottom"></div>
+
+    <div class="header">
+        <div class="header-line-2">
+            <a href="#" class="header-pretitle color-highlight">மழைநீர் சேகரிப்பு</a>
+            <a href="#" class="header-title">நிபுணர் உதவி</a>
+            <a href="#" data-menu="menu-list" class="header-icon header-icon-1"><i class="fa fa-bars"></i></a>
+            <a href="#" data-menu="menu-find" class="header-icon header-icon-2"><i class="fa fa-search"></i></a>
+            <a href="#" data-menu="menu-demo" class="header-icon header-icon-3"><i class="fa fa-cog"></i></a>
+        </div>  
+    </div>
+    
+    
+	<div class="page-content header-clear-small">
+            
+		<div class="content-fullscreen">
+			<iframe class="responsive-image maps shadow-medium bottom-0" src="https://maps.google.com/?ie=UTF8&amp;ll=11.016844,76.955833&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
+		</div>
+
+        <div class="content-title bottom-30 top-30">
+            <span class="color-highlight">தொடர்பில் இருங்கள்</span>
+            <h1>உங்கள் தேவையை எங்களுக்கு அனுப்புங்கள்</h1>
+			
+        </div>
+        
+        <div class="content">
+            <div class="container bottom-0">
+                <div class="contact-form">
+                    <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                        <div class="notification-small notification-has-icon notification-green shadow-small">
+                            <div class="notification-icon"><i class="fa fa-check notification-icon"></i></div>
+                            <p>Message sent! We'll be in Touch!</p>
+                            <a href="#" class="close-notification"><i class="fa fa-times"></i></a>
+                        </div>
+                    </div>
+                    <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                        <fieldset>
+                            <div class="formValidationError bg-red-dark" id="contactNameFieldError">
+                                <p class="center-text color-white">Name is Required!</p>
+                            </div>
+                            <div class="formValidationError bg-red-dark" id="contactEmailFieldError">
+                                <p class="center-text color-white">Mail Address Required!</p>
+                            </div>
+                            <div class="formValidationError bg-red-dark" id="contactEmailFieldError2">
+                                <p class="center-text color-white">Mail Address Must be Valid!</p>
+                            </div>
+                            <div class="formValidationError bg-red-dark" id="contactMessageTextareaError">
+                                <p class="center-text color-white">Message Field is Empty!</p>
+                            </div>
+                            <div class="formFieldWrap">
+                                <label class="field-title contactNameField" for="contactNameField">பெயர்:<span>(required)</span>
+                                </label>
+                                <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField" />
+                            </div>
+                            <div class="formFieldWrap">
+                                <label class="field-title contactEmailField" for="contactEmailField">மன்னஞ்சல்: <span>(required)</span>
+                                </label>
+                                <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField" />
+                            </div>
+                            <div class="formTextareaWrap">
+                                <label class="field-title contactMessageTextarea" for="contactMessageTextarea">உங்கள் தேவை: <span>(required)</span>
+                                </label>
+                                <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+                            </div>
+                            <div class="formSubmitButtonErrorsWrap contactFormButton">
+                                <input type="submit" class="buttonWrap button bg-highlight button-sm button-rounded uppercase ultrabold contactSubmitButton shadow-small top-30" id="contactSubmitButton" value="சமர்ப்பிக்க" data-formId="contactForm" />
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="decoration"></div>
+        </div>
+        
+       
+        
+       
+    </div>
+    
+</div>      
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
+</html>
